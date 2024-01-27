@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { Head } from "../../../components/Head";
-import { Snacks } from "../../../components/Snacks";
+import { Snacks } from "../../../components/Snacks/snacks";
 import { SnackTitle } from "../../../components/SnackTitle";
 
 import { getIceCreams } from "../../../services/api";
