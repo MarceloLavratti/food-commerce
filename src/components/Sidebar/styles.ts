@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components'
+import styled, { css } from 'styled-components'
 
 interface ContainerProps {
   isMenuOpen: boolean
@@ -7,15 +7,14 @@ interface ContainerProps {
 export const Container = styled.aside<ContainerProps>`
   background-color: ${({ theme }) => theme.colors.red};
 
-  ${({isMenuOpen}) => {
-    return isMenuOpen ?
-    css`
-    width: 16.3rem;
-    `
-    : css`
-    width: 7.75rem;
-    `
-  }}
+  ${({ isMenuOpen }) =>
+    isMenuOpen
+      ? css`
+          width: 16.3rem;
+        `
+      : css`
+          width: 7.75rem;
+        `}
 
   padding: 2rem 0;
   overflow: hidden;
@@ -103,39 +102,40 @@ export const Container = styled.aside<ContainerProps>`
     right: 0;
     bottom: 0;
     z-index: 999;
+
     width: 100%;
     height: 5rem;
     overflow-y: auto;
     padding: 0 0;
 
-    button{
+    button {
       display: none;
     }
 
-    nav{
+    nav {
       height: 100%;
 
-      ul{
+      ul {
         flex-direction: row;
         align-items: center;
       }
 
-      li{
-        a{
+      li {
+        a {
           flex-direction: column;
           padding: 0rem;
 
-          svg{
+          svg {
             width: 3.25rem;
             height: 3.25rem;
           }
 
-          span{
+          span {
             display: none;
           }
 
-          &.active{
-            &::after{
+          &.active {
+            &::after {
               display: none;
             }
           }

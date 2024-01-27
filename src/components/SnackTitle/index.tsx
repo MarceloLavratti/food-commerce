@@ -1,5 +1,6 @@
 import { ReactNode } from 'react'
-import { Title } from './snackTitleStyles'
+
+import { Title } from './styles'
 
 interface TitleProps {
   children: ReactNode

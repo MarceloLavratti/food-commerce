@@ -5,14 +5,14 @@ export const Container = styled.main`
   min-height: 100vh;
   display: flex;
 
-  >section{
+  > section {
     flex: 1;
     width: 100%;
     height: 100vh;
     overflow-y: auto;
     padding: 2rem 1.875rem;
 
-    img{
+    img {
       width: 10rem;
       margin-bottom: 2rem;
     }
@@ -22,8 +22,8 @@ export const Container = styled.main`
       flex-direction: column;
       padding-bottom: 8rem;
 
-      img{
-        align-items: center;
+      img {
+        align-self: center;
       }
     }
   }
